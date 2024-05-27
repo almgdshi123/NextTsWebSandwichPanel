@@ -5,9 +5,9 @@ import Link from "next/link";
 export default function Content({ title }) {
   return (
     <div>
-      <section id="service">
+      
         <DropdownItem title={title}></DropdownItem>
-      </section>
+    
     </div>
   );
 }
@@ -67,13 +67,17 @@ function DropdownItem(props) {
 
   return (
     <div>
-      <section id="service">
-        {dataContent.map((item, index) =>
-          props.title === "home" || item.href === props.title
-            ? renderContent(item, index)
-            : null
-        )}
-      </section>
+     
+     {
+  dataContent.map((item, index) => (
+    <section key={index} id={item.href}>
+      {props.title === "home" || item.href === props.title
+        ? renderContent(item, index)
+        : null}
+    </section>
+  ))
+}
+
     </div>
   );
 }

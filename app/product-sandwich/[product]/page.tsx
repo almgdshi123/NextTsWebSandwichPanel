@@ -13,6 +13,11 @@ const product = dataContent.find((product) => product.href === props.params.prod
 if (product) {
     metadata.title = product.titleMeat;
     metadata.description = product.description;
+    metadata.keywords = product.keywords;
+    metadata.author = product.author;
+    metadata.og.url = product.og.url;
+    metadata.og.type = product.og.type;
+    metadata.twitter.title = product.titleMeat;
   } 
 
 
@@ -23,6 +28,17 @@ if (product) {
   );
 }
 export const metadata = {
-  title: ' ',
-  description: '',     }
+  title: '',
+  description: '',
+  keywords:'',
+  author: '',
+  og: {
+    url: '',
+    type: '',
+  },
+  twitter: {
+    title: '',
+  },
+
+};
   

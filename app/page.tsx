@@ -8,9 +8,7 @@ export default function Home() {
     <div>
     <div className="home-container">
 
-      <div className="home"  >
         <SwiperComponent></SwiperComponent>
-      </div>
     </div>
    <Content  title="home"></Content> 
   </div>
