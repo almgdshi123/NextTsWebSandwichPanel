@@ -1,24 +1,23 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef,MouseEvent  } from "react";
 import "./productView.css";
 
-export default function ProductView({ name, productId, data }) {
-  const [imgId, setImgId] = useState(1);
-  const imgShowcaseRef = useRef(null);
+export default function ProductView({  data }) {
+  const [imgId, setImgId] = useState<number>(1);
+  const imgShowcaseRef = useRef<HTMLDivElement>(null);
 
   // معالج النقر
-  const handleClick = (event, newImgId) => {
+  const handleClick = (event: MouseEvent, newImgId: number) => {
     event.preventDefault();
     setImgId(newImgId);
   };
 
   useEffect(() => {
     const slideImage = () => {
-      const displayWidth =
-        imgShowcaseRef.current.querySelector("img:first-child").clientWidth;
-      imgShowcaseRef.current.style.transform = `translateX(${
-        (imgId - 1) * displayWidth
-      }px)`;
+      if (imgShowcaseRef.current) {
+        const displayWidth = imgShowcaseRef.current.querySelector("img:first-child")?.clientWidth || 0;
+        imgShowcaseRef.current.style.transform = `translateX(${(imgId - 1) * displayWidth}px)`;
+      }
     };
 
     slideImage();
@@ -78,7 +77,7 @@ export default function ProductView({ name, productId, data }) {
                           <a
                             href={"/product-sandwich/" + data.href}
                             className="product-link"
-                            alt={data.alt}
+                            title={data.alt}
                           >
                             {data.title}
                           </a>
