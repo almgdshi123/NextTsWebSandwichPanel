@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    background-color: #04364A; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    position: absolute;
+    
+justify-content: center;
+align-items: center;
+    width: 100%;
+  }
+  .footer a,.footer a:visited,.footer a:active,.footer a:hover,.footer a:link {
+    color: #DAFFFB;
+    text-decoration:revert-layer ;
+  }
