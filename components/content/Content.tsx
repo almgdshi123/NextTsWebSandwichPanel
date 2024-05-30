@@ -1,13 +1,13 @@
 import "./content.css";
+
 import { dataContent } from "../dataContent";
 import Link from "next/link";
+import React from "react";
 
 export default function Content({ title }) {
   return (
     <div>
-      
-        <DropdownItem title={title}></DropdownItem>
-    
+      <DropdownItem title={title}></DropdownItem>
     </div>
   );
 }
@@ -32,10 +32,7 @@ function DropdownItem(props) {
               <div className="image">
                 <img src={data.image} alt={data.altimage} loading="lazy" />
                 <Link href={`/product-sandwich/${item.href}`} legacyBehavior>
-                  <a
-                    className="tag"
-                   title ={item.alt + "" + data.altimage}
-                  >
+                  <a className="tag" title={item.alt + "" + data.altimage}>
                     {item.title}
                   </a>
                 </Link>
@@ -48,16 +45,22 @@ function DropdownItem(props) {
               </div>
             </div>
             <div className="info">
-              <Link href={`/product-sandwich/${item.href}/${data.id}`} legacyBehavior>
-              <a
-                rel="noopener noreferrer"
-                className="block"
-                title={data.alt}
+              <Link
+                href={`/product-sandwich/${item.href}/${data.id}`}
+                legacyBehavior
               >
-                <span className="title ">{data.description} </span>
-              </a>
+                <a rel="noopener noreferrer" className="block" title={data.alt}>
+                  <span className="title ">{data.description} </span>
+                </a>
               </Link>
-              <p className="description">{data.content}</p>
+              <p className="description">
+                {data.content.split("\n").map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>{" "}
             </div>
           </div>
         ))}
@@ -67,17 +70,13 @@ function DropdownItem(props) {
 
   return (
     <div>
-     
-     {
-  dataContent.map((item, index) => (
-    <section key={index} id={item.href}>
-      {props.title === "home" || item.href === props.title
-        ? renderContent(item, index)
-        : null}
-    </section>
-  ))
-}
-
+      {dataContent.map((item, index) => (
+        <section key={index} id={item.href}>
+          {props.title === "home" || item.href === props.title
+            ? renderContent(item, index)
+            : null}
+        </section>
+      ))}
     </div>
   );
 }

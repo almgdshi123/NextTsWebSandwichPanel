@@ -10,10 +10,10 @@ export const dataPage = [
         },
         {
             "title": "Sandwich",
-            "text": "سندويش",
+            "text": "سندوتش",
             "icon": "ri-briefcase-4-line",
             "href": "/product-sandwich/sandwich",
-            "alt": "سندويش بانل - اكتشف منتجاتنا من ألواح الساندوتش بانل"
+            "alt": "سندوتش بانل - اكتشف منتجاتنا من ألواح الساندوتشبانل"
         },
         {
             "title": "Room",
@@ -34,7 +34,7 @@ export const dataPage = [
             ,"text": "تصفح كافة المنتجات ",
             "icon": "ri-arrow-right-s-line",
             "href": "/product-sandwich",
-            "alt": "المزيد من التفاصيل - تصفح كافة المنتجات السندويشية"
+            "alt": "المزيد من التفاصيل - تصفح كافة المنتجات السندوتشية"
         }
     
     

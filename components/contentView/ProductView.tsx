@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef,MouseEvent  } from "react";
 import "./productView.css";
 
-export default function ProductView({  data }) {
+export default function ProductView({  dataDetails }) {
   const [imgId, setImgId] = useState<number>(1);
   const imgShowcaseRef = useRef<HTMLDivElement>(null);
 
@@ -35,7 +35,7 @@ export default function ProductView({  data }) {
     <div className="container">
       <div className="card-wrapper">
        
-            {   data.data.map((data) =>
+            {   dataDetails.data.map((data) =>
                   
                       <div className="card-details" key={data.id}>
                         <div className="product-imgs">
@@ -75,11 +75,11 @@ export default function ProductView({  data }) {
                         <div className="product-content">
                           <h2 className="product-title">{data.title} </h2>
                           <a
-                            href={"/product-sandwich/" + data.href}
+                            href={"/product-sandwich/" +dataDetails.href}
                             className="product-link"
-                            title={data.alt}
+                            title={dataDetails.alt}
                           >
-                            {data.title}
+                            {dataDetails.title}
                           </a>
                           <div className="product-rating">
                             <i className="ri-star-fill"></i>
