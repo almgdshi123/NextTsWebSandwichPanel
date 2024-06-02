@@ -13,7 +13,12 @@ export async function generateStaticParams() {
 }
 
 export default function Page(props) {
-  const { productId, product } = props.params;
+
+ const productId=decodeURIComponent(props.params.productId);
+ const product = decodeURIComponent(props.params.product);
+ 
+
+
 
   const productData = dataDetails.find((item) => item.href === product);
   if (productData) {

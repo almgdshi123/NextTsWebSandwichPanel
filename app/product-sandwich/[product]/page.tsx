@@ -9,9 +9,12 @@ export async function generateStaticParams() {
 }
 
 export default function Page(props) {
-const product = dataContent.find((product) => product.href === props.params.product);
+const productName = decodeURIComponent(props.params.product);
+const product = dataContent.find((product) => product.href === productName);
 if (product) {
+
     metadata.title = product.titleMeat;
+
     metadata.description = product.description;
     metadata.keywords = product.keywords;
     metadata.author = product.author;
@@ -29,12 +32,9 @@ if (product) {
     metadata.twitter.card = product.twitter.card;
 
   } 
-
-
   return (
     <div>
-   
-<Content  title={props.params.product}></Content>
+<Content  title={productName}></Content>
     </div>
   );
 }

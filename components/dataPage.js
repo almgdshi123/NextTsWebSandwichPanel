@@ -10,23 +10,23 @@ export const dataPage = [
         },
         {
             "title": "Sandwich",
-            "text": "سندوتش",
+            "text": "سندويش",
             "icon": "ri-briefcase-4-line",
-            "href": "/product-sandwich/sandwich",
-            "alt": "سندوتش بانل - اكتشف منتجاتنا من ألواح الساندوتشبانل"
+            "href": "/product-sandwich/"+ "الواح-الساندوتش-بانل",
+            "alt": "سندويش بانل - اكتشف منتجاتنا من ألواح الساندوتش بانل"
         },
         {
             "title": "Room",
             "text": "غرف جاهزة",
             "icon": "ri-shopping-bag-3-line",
-            "href": "/product-sandwich/room",
+            "href": "/product-sandwich/"+"غرف-جاهزة",
             "alt": "غرف جاهزة - تصفح تصاميم الغرف الجاهزة لكافة الاستخدامات"
         },
         {
             "title": "hnaager",
             "text": "قسم تركيب الهناجر",
             "icon": "ri-phone-line",
-            "href": "/product-sandwich/hnaager",
+            "href": "/product-sandwich/"+"تركيب-هناجر",
             "alt": "تركيب الهناجر - خدمات تركيب الهناجر المتكاملة"
         },
         {
@@ -34,7 +34,7 @@ export const dataPage = [
             ,"text": "تصفح كافة المنتجات ",
             "icon": "ri-arrow-right-s-line",
             "href": "/product-sandwich",
-            "alt": "المزيد من التفاصيل - تصفح كافة المنتجات السندوتشية"
+            "alt": "المزيد من التفاصيل - تصفح كافة المنتجات السندويشية"
         }
     
     
