@@ -3,6 +3,7 @@ import "./content.css";
 import { dataContent } from "../dataContent";
 import Link from "next/link";
 import React from "react";
+import ShareButton from "./ShareContent";
 
 export default function Content({ title }) {
   return (
@@ -12,7 +13,10 @@ export default function Content({ title }) {
   );
 }
 
+
 function DropdownItem(props) {
+
+
   const renderContent = (item, index) => (
     <div className="subjcet-container" key={index}>
       <div className="poular-box">
@@ -38,10 +42,8 @@ function DropdownItem(props) {
                 </Link>
               </div>
               <div className="date">
-                <span>{data.price}</span>
-                <button aria-label="مشاركة" className="menu-btn">
-                  <i className="ri-share-line"></i>
-                </button>
+                <span>{data.price}</span>  <ShareButton title={data.title} description={data.description} href={item.href} id={data.id}  />
+
               </div>
             </div>
             <div className="info">

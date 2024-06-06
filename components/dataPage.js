@@ -30,6 +30,14 @@ export const dataPage = [
             "alt": "تركيب الهناجر - خدمات تركيب الهناجر المتكاملة"
         },
         {
+            "title":"/contact"
+            ,"text": "  طلب عرض سعر المنتجات " ,
+            "icon": "ri-phone-line",
+            "href": "/contact",
+            "alt": "اتصل بنا - تواصل معنا"
+        }
+        ,
+        {
             "title":"/product-sandwich"
             ,"text": "تصفح كافة المنتجات ",
             "icon": "ri-arrow-right-s-line",

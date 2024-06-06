@@ -103,9 +103,17 @@ class Header extends React.Component<{}, IHeaderState> {
             />
           </div>
           <div className="social-icons">
-            <i className="ri-facebook-line"></i>
-            <i className="ri-instagram-line"></i>
-            <i className="ri-telegram-line"></i>
+            <Link href="https://www.facebook.com/profile.php?id=100072036128119&mibextid=ZbWKwL" legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer">
+                <i className="ri-facebook-line"></i>
+              </a>
+            </Link>
+
+            <Link href="https://www.instagram.com/a___2008s" legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer">
+                <i className="ri-instagram-line instagram"></i>
+              </a>
+            </Link>
             <i className="ri-youtube-line"></i>
           </div>
         </div>

@@ -30,9 +30,15 @@
 	<priority>0.6</priority>
 </url>
 <url>
+	<loc>https://sandwichpanl.com/product-sandwich/غرف-جاهزة/غرف-تبريد-وتجميد-من-الساندوتش</loc>
+	<priority>0.6</priority>
+</url>
+<url>
 	<loc>https://sandwichpanl.com/product-sandwich/تركيب-هناجر/خدمات-تركيب-هناجر</loc>
 	<priority>0.6</priority>
 </url>
+<url>
+
 	<loc>https://sandwichpanl.com/product-sandwich/تركيب-هناجر/توريد-وتركيب-هناجر-ساندوتش-بانل</loc>
 	<priority>0.6</priority>
 </url>
@@ -50,6 +56,10 @@
 </url>
 <url>
 	<loc>https://sandwichpanl.com/product-sandwich/</loc>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://sandwichpanl.com/contact</loc>
 	<priority>0.8</priority>
 </url>
 </urlset>

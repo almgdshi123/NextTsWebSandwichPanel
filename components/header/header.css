@@ -93,13 +93,13 @@
   .social-icons :nth-child(1) {
     color: #3b5998;
   }
-  .social-icons :nth-child(2) {
+  .social-icons .instagram {
     color: #ffbb70;
   }
-  .social-icons :nth-child(3) {
+  /* .social-icons :nth-child(3) {
     color: #0088cc;
-  }
-  .social-icons :nth-child(4) {
+  } */
+  .social-icons :nth-child(3) {
     color: #cd201f;
   }
   
@@ -294,7 +294,7 @@
       }
       .social-icons{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
       }
       
     }

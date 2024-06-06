@@ -72,7 +72,7 @@
     
     .title {
       display: block;
-      color: #A80000;
+      color: #176B87;
       font-size: var(--normal-font-size);
       line-height: 1.35rem;
       font-weight: 600;
@@ -85,10 +85,18 @@
       line-height: 1.375;
     }
   
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 768px) {
   
       .subject-box {
-          grid-template-columns: 1fr 1fr 1fr 1fr; 
+          grid-template-columns:  1fr 1fr 1fr; 
+      }
+      
+    }
+  
+    @media screen and (min-width: 992px) {
+  
+      .subject-box {
+          grid-template-columns:  1fr 1fr 1fr 1fr; 
       }
       
     }
