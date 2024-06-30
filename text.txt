@@ -1,0 +1,55 @@
+   {
+        id: "شركة-تركيب-ساندوتش-بانل-الرياض",
+        title: "شركة تركيب ساندوتش بانل في الرياض",
+        imagedata: [
+          {
+            image:"",
+            title: "",
+          }
+          ,{
+            image:"",
+            title: "",
+          }
+          ,{
+            image:"",
+            title: "",
+          },
+          {
+            image:"",
+            title: "",
+          }
+        ]
+        ,
+        priceOld:"",
+        priceNew: "",
+        description: "",
+        keywords: "",
+        author: "",
+        other: {
+          image: "",
+          type: "product",
+        },
+        twitter: {
+          title: "",
+          card: "summary_large_image",
+          image: "",
+        },
+        features: [
+          {
+            title: "",
+            description: "",
+          },
+          {
+            title: "",
+            description: "",
+          },
+          {
+            title: "",
+            description: "",
+          },
+          {
+            title: "",
+            description: "",
+          },
+        ],
+    }

@@ -247,8 +247,8 @@
     color: #fff;
     font-weight: 700;
     font-size: 45px;
-    bottom: 50px;
-    left: 10%;
+    bottom: 10px;
+    left: 5%;
     border: 0;
     z-index: 9999;
     width: 70px;
@@ -284,7 +284,48 @@
     }
   }
   /* end watsapp */
-  
+  /* phone */
+#phone a {
+  text-decoration: none;
+}
+#phone .phones {
+  position: fixed;
+  transition: all .5s ease;
+  background-color: #cd201f; /* يمكنك تغيير اللون حسب تصميمك */
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px; /* حجم الأيقونة */
+  bottom: 90px; /* المسافة من الأسفل */
+  left: 5%; /* المسافة من اليسار */
+  border: 0;
+  z-index: 9999;
+  width: 70px; /* عرض الأيقونة */
+  line-height: 70px; /* ارتفاع الأيقونة */
+}
+#phone .phones::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px; /* عرض الحدود النابضة */
+  height: 80px; /* ارتفاع الحدود النابضة */
+  background-color: #cd201f; /* لون الحدود النابضة */
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+#phone .phones:focus {
+  border: none;
+  outline: none;
+}
+/* end phone */
+
     
     @media screen and (min-width: 1000px) {
       .social-icons i{

@@ -103,7 +103,10 @@ class Header extends React.Component<{}, IHeaderState> {
             />
           </div>
           <div className="social-icons">
-            <Link href="https://www.facebook.com/profile.php?id=100072036128119&mibextid=ZbWKwL" legacyBehavior>
+            <Link
+              href="https://www.facebook.com/profile.php?id=100072036128119&mibextid=ZbWKwL"
+              legacyBehavior
+            >
               <a target="_blank" rel="noopener noreferrer">
                 <i className="ri-facebook-line"></i>
               </a>
@@ -131,6 +134,17 @@ class Header extends React.Component<{}, IHeaderState> {
               <i className="ri-whatsapp-line"></i>
             </a>
           </Link>
+        </div>
+        <div id="phone">
+          <a
+            href="tel:+966500513512"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="phones"
+            title="تواصل معنا عبر الهاتف"
+          >
+            <i className="ri-phone-line"></i>
+          </a>
         </div>
       </div>
     );
