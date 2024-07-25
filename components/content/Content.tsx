@@ -13,10 +13,7 @@ export default function Content({ title }) {
   );
 }
 
-
 function DropdownItem(props) {
-
-
   const renderContent = (item, index) => (
     <div className="subjcet-container" key={index}>
       <div className="poular-box">
@@ -42,13 +39,19 @@ function DropdownItem(props) {
                 </Link>
               </div>
               <div className="date">
-                <span>{data.price}</span>  <ShareButton title={data.title} description={data.description} href={item.href} id={data.id}  />
-
+                <span>{data.price}</span>{" "}
+                <ShareButton
+                  title={data.title}
+                  description={data.description}
+                  href={item.href}
+                  id={data.id}
+                />
               </div>
             </div>
             <div className="info">
               <Link
-                href={`/product-sandwich/${item.href}/${data.id}`}
+            
+                href={data.type==='section'?`/product-sandwich/${data.id}`:`/product-sandwich/${item.href}/${data.id}`}
                 legacyBehavior
               >
                 <a rel="noopener noreferrer" className="block" title={data.alt}>
@@ -73,12 +76,16 @@ function DropdownItem(props) {
   return (
     <div>
       {dataContent.map((item, index) => (
+           item.status===true ||props.title!="home" ?  (
+          
+           
         <section key={index} id={item.href}>
           {props.title === "home" || item.href === props.title
             ? renderContent(item, index)
             : null}
         </section>
-      ))}
+      ):null)
+      )}
     </div>
   );
 }

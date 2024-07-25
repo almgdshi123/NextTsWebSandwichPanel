@@ -62,8 +62,8 @@ class Header extends React.Component<{}, IHeaderState> {
                   <i className="ri-close-line"></i>
                 </button>
                 <h3 className="">
-                  شركة ساندوتش <br />
-                  <span>بانل وغرف جاهزه </span>
+                  شركة النظم المتطورة <br />
+                  <span>لساندوتش بانل والغرف الجاهزة </span>
                 </h3>
                 <ul onClick={this.toggleMenu}>
                   {dataPage.map((item, index) => (
@@ -81,12 +81,22 @@ class Header extends React.Component<{}, IHeaderState> {
           </div>
 
           <div className="logo">
-            <Link href="/" legacyBehavior>
+          <Link href="/" legacyBehavior>
+            <img 
+              src="/شعار-شركة-سندوتيش-بانل.png"
+              height={70}
+              title="شركة الرائدة في مجال السندوتش بانل والغرف الجاهزة"
+            alt="شعار شركة سندوتيش بانل"
+            ></img>
+          </Link>
+            {/* <Link href="/" legacyBehavior>
+
               <a title="شركة الرائدة في مجال السندوتش بانل والغرف الجاهزة">
+
                 <span className="main-color">شركة</span>
                 <span> ساندوتش بانل وغرف جاهزه</span>
               </a>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="header-bottom">
