@@ -6,58 +6,73 @@
 			<priority>1.0</priority>
 		</url>
 		<url>
+			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل</loc>
+			<priority>1</priority>
+		</url>
+		<url>
 			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل/الواح-الساندوتش-بانل-للجدران-والأسقف</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل/ألواح-ساندوتش-بانل-ألواح-ألمنيوم</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل/الواح-حائط-عازل</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل/الواح-حائط-بانل-بسمك-10.0-سم</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
+		</url>
+		<url>
+			<loc>https://sandwichpanl.com/product-sandwich/غرف-جاهزة</loc>
+			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://sandwichpanl.com/product-sandwich/غرف-جاهزة/غرف-جاهزة-مسبقة-الصنع</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://sandwichpanl.com/product-sandwich/غرف-جاهزة/غرف-جاهزة-من-سندوتش</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
 		</url>
 		<!-- <url>
 			<loc>https://sandwichpanl.com/product-sandwich/غرف-جاهزة/غرف-تبريد-وتجميد-من-الساندوتش</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
 		</url> -->
 		<url>
+			<loc>https://sandwichpanl.com/product-sandwich/تركيب-هناجر</loc>
+			<priority>1</priority>
+		</url>
+		<url>
 			<loc>https://sandwichpanl.com/product-sandwich/تركيب-هناجر/خدمات-تركيب-هناجر</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
 		</url>
 		<url>
 
 			<loc>https://sandwichpanl.com/product-sandwich/تركيب-هناجر/توريد-وتركيب-هناجر-ساندوتش-بانل</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
 		</url>
 		<url>
-			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل</loc>
-			<priority>0.6</priority>
-		</url>
-		<url>
-			<loc>https://sandwichpanl.com/product-sandwich/غرف-جاهزة</loc>
-			<priority>0.6</priority>
-		</url>
-		<url>
-			<loc>https://sandwichpanl.com/product-sandwich/تركيب-هناجر</loc>
-			<priority>0.6</priority>
-		</url>
-			<url>
 			<loc>https://sandwichpanl.com/product-sandwich/غرف-حراسة</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
 		</url>
+		<url>
+
+			<loc>https://sandwichpanl.com/product-sandwich/غرف-حراسة/غرف-حراسة-جاهزة</loc>
+			<priority>1</priority>
+		</url>
+		<url>
+
+			<loc>https://sandwichpanl.com/product-sandwich/غرف-حراسة/تصميم-غرف-خدامة</loc>
+			<priority>1</priority>
+		</url>
+ 		<url>
+			<loc>https://sandwichpanl.com/product-sandwich/انواع-الواح-الساندوتش-بانل</loc>
+			<priority>1</priority>
+		</url>
+		
 		<url>
 			<loc>https://sandwichpanl.com/product-sandwich</loc>
 			<priority>0.8</priority>
@@ -68,14 +83,18 @@
 		</url>
 		<url>
 			<loc>https://sandwichpanl.com/مقاول-ساندوتش-بانل</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://sandwichpanl.com/شركة-تركيب-ساندوتش-بانل-الرياض</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://sandwichpanl.com/هناجر-ساندوتش-بانل</loc>
-			<priority>0.6</priority>
+			<priority>1</priority>
+		</url>
+			<url>
+			<loc>https://sandwichpanl.com/عيوب-ومميزات-ساندوتش-بانل</loc>
+			<priority>1</priority>
 		</url>
 </urlset>

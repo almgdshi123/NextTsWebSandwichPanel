@@ -52,6 +52,7 @@ export default function RequestQuote() {
                   className="form-control"
                   id="name"
                   name="to_name"
+                  required
                   placeholder="الاسم"
                 />
               </div>
@@ -61,6 +62,7 @@ export default function RequestQuote() {
                   type="email"
                   className="form-control"
                   id="email"
+                  required
                   name="to_email"
                   placeholder="البريد الالكتروني"
                 />

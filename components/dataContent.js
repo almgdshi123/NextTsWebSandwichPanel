@@ -1,4 +1,4 @@
-import { type } from "os";
+
 
 export const dataContent = [
   {
@@ -15,19 +15,27 @@ export const dataContent = [
     og: {
       url: "https://sandwichpanl.com/product-sandwich/"+"الواح-الساندوتش-بانل",
       site_name: "شركة الساندوتش بانل",
-      title: "ألواح الساندوتش بانل للجدران والأسقف",
-      description: "ألواح الساندوتش بانل المتطورة للجدران والأسقف توفر عزلًا مثاليًا وتصميمًا عصريًا.",
       image: "https://sandwichpanl.com/assets/img/ألواح-الساندوتش-بانل-للجدران-والأسقف.jpg",
       type: "product",
     },
     twitter: {
-      title: "الساندوتش بانل: جودة عالية وأسعار مميزة | احصل على عرض سعر حصري بالتواصل معنا",
       image: "https://sandwichpanl.com/assets/img/ألواح-الساندوتش-بانل-للجدران-والأسقف.jpg",
       card: "summary_large_image",
     },
     
 
     data: [
+      {
+        id: "انواع-الواح-الساندوتش-بانل",
+        type: "section",
+        image: "/assets/img/جميع-انواع-الساندوتش-بانل.jpg",
+        altimage: "صورة تظهر جميع أنواع ألواح الساندوتش بانل",
+        price:  "جميع الأنواع متوفرة بأسعار تنافسية",
+        alt: "أنواع ألواح الساندوتش بانل",
+        description: "نوفر جميع أنواع ألواح الساندوتش بانل ",
+        content:"نوفر جميع أنواع ألواح الساندوتش بانل التي تتناسب مع مختلف الاحتياجات والمشاريع، مع ضمان أعلى مستويات الجودة والمتانة."
+
+      },
       {
         id: "الواح-الساندوتش-بانل-للجدران-والأسقف",
         image: "/assets/img/ألواح-الساندوتش-بانل-للجدران-والأسقف.jpg",
@@ -39,6 +47,7 @@ export const dataContent = [
         content:
           " توفر عزلًا مثاليًا وتصميمًا عصريًا يلبي كافة متطلبات المشاريع .",
       },
+ 
       // {
       //   id: "ألواح-ساندوتش-بانل-ألواح-ألمنيوم",
       //   image: "/assets/img/ألواح-ساندوتش-بانل-ألواح-ألمنيوم.jpg",
@@ -86,13 +95,10 @@ export const dataContent = [
     og: {
       url: "https://sandwichpanl.com/product-sandwich/"+"غرف-جاهزة",
       site_name: "شركة الغرف الجاهزة",
-      title: "غرف جاهزة مسبقة الصنع",
-      description: "استمتع بالراحة والأناقة مع غرفنا الجاهزة المصممة لتلبية كافة احتياجاتك.",
       image: "https://sandwichpanl.com/assets/img/مباني-مسبقة-الصنع.jpg",
       type: "product",
     },
     twitter: {
-      title: "غرف جاهزة مسبقة الصنع | استكشف مجموعتنا المتنوعة",
       image: "https://sandwichpanl.com/assets/img/مباني-مسبقة-الصنع.jpg",
       card: "summary_large_image",
     },
@@ -153,13 +159,10 @@ export const dataContent = [
     og: {
       url: "https://sandwichpanl.com//product-sandwich/"+"تركيب-هناجر",
       site_name: "شركة تركيب الهناجر",
-      title: "تركيب هناجر في السعودية",
-      description: "نقدم خدمات تركيب هناجر متطورة في السعودية، مع تصاميم مبتكرة تلائم احتياجاتكم.",
       image: "https://sandwichpanl.com/assets/img/شركات-هناجر-في-السعودية.jpg",
       type: "product",
     },
     twitter: {
-      title: "تركيب هناجر في السعودية | تصاميم مبتكرة وحلول بناء سريعة",
       image: "https://sandwichpanl.com/assets/img/شركات-هناجر-في-السعودية.jpg",
       card: "summary_large_image",
     },
@@ -200,18 +203,57 @@ export const dataContent = [
       og: {
         url: "https://sandwichpanl.com/product-sandwich/غرف-حراسة",
         site_name: "  غرف حراسة جاهزة | استكشف الحلول  المتكاملة",
-        title: "غرف حراسة جاهزة",
-        description: "استمتع بالأمان والراحة مع غرف الحراسة الجاهزة المصممة لتلبية كافة احتياجاتك .",
         image: "https://sandwichpanl.com/assets/img/غرف-حراسة.jpg",
         type: "product"
       },
       twitter: {
-        title: "غرف حراسة جاهزة | استكشف الحلول  المتكاملة",
         image: "https://sandwichpanl.com/assets/img/غرف-حراسة.jpg",
         card: "summary_large_image"
       },
       data: [
+        {
+          id: "غرف-حراسة-جاهزة",
+          image: "/assets/img/غرف-حراسة-جاهزة.jpg",
+          alt: "غرف حراسة جاهزة في السعودية - حلول متكاملة ومتانة عالية",
+          altimage: "صورة لغرف حراسة جاهزة في السعودية - حلول متكاملة ومتانة عالية",
+          price: "احصل على عرض سعر حصري بالتواصل معنا",
+          description: "غرف حراسة جاهزة",
+          content: "اكتشف غرف الحراسة الجاهزة المصنوعة من الساندويتش بانل"
+        },
+        {
+          id:"تصميم-غرف-خدامة",
+          image: "/assets/img/تصميم-غرف- خدامة-وحارس.jpg",
+          alt: "تصميم غرف خدامة في السعودية",
+          altimage: "صورة لتصميم غرف خدامة في السعودية",
+          price: "احصل على عرض سعر حصري بالتواصل معنا",
+          description: "تصميم غرف خدامة",
+          content: "غرف خدمة مبنية من الساندويتش بانل للخدم والحارس"  
+        }
+
         
       ],
+  },
+  {
+    status:false,
+    title:"جميع انواع الواح السانذويتش بانل",
+    titleMeat: "ألواح الساندوتش بانل | جميع الأنواع والمواصفات",
+
+    href:  "انواع-الواح-الساندوتش-بانل",
+    alt: "اكتشف جميع أنواع ألواح الساندوتش بانل المتوفرة لدينا",
+    description:"اكتشف جميع أنواع ألواح الساندوتش بانل في السعودية. نوفر ألواح عالية الجودة لتركيب الهناجر والغرف الجاهزة، توفر سرعة في التركيب وتكلفة مناسبة.",
+    keywords: "ألواح الساندوتش بانل, سندوتش بانل, تركيب هناجر, غرف جاهزة, ألواح عزل, ألواح عازلة, عزل حراري, عزل صوتي, مواد بناء, السعودية",
+    author: "شركة النظم المتطورة المتخصصة في بيع وتوريد وتركيب السندوتش بانل",
+    og: {
+      url: "https://sandwichpanl.com/product-sandwich/انواع-الواح-الساندوتش-بانل",
+      site_name: "شركة النظم المتطورة | ألواح الساندوتش بانل",   
+      image: "https://sandwichpanl.com/assets/img/جميع-انواع-الساندوتش-بانل.jpg",
+      type: "product"
+    },
+    twitter: {
+      image: "https://sandwichpanl.com/assets/img/جميع-انواع-الساندوتش-بانل.jpg",
+      card: "summary_large_image"
+    },
+    data: []
+    
   }
 ];

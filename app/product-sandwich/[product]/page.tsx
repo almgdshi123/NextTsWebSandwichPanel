@@ -21,13 +21,10 @@ if (product) {
     metadata.other={
       'og:url':product.og.url,
       'og:site_name':product.og.site_name,
-      'og:title':product.og.title,
-      'og:description':product.og.description,
       'og:image':product.og.image,
       'og:type':product.og.type,
     }
    
-    metadata.twitter.title = product.twitter.title;
     metadata.twitter.image = product.twitter.image;
     metadata.twitter.card = product.twitter.card;
 
@@ -47,7 +44,6 @@ export const metadata = {
     
   },
   twitter: {
-    title: '',
     card:"summary_large_image",
     image:""
 

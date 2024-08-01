@@ -17,7 +17,6 @@ export default function page() {
       'og:url': 'https://sandwichpanl.com/contact',
       'og:site_name': 'شركة الساندوتش بانل لطلبات عرض الأسعار',
       'og:title': 'طلب عرض أسعار لألواح الساندوتش بانل',
-      'description': 'املأ نموذج طلب عرض الأسعار لدينا واحصل على استشارة مجانية لاختيار أفضل حلول العزل لمشروعك.',
       'og:image': 'https://sandwichpanl.com/assets/img/quote-request-banner.jpg',
       'og:type': 'website',
     },
