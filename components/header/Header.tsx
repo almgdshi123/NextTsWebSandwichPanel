@@ -117,13 +117,13 @@ class Header extends React.Component<{}, IHeaderState> {
               href="https://www.facebook.com/profile.php?id=100072036128119&mibextid=ZbWKwL"
               legacyBehavior
             >
-              <a target="_blank" rel="noopener noreferrer">
+              <a target="_blank" rel="noopener noreferrer" title="تواصل معنا عبر الفيسبوك">
                 <i className="ri-facebook-line"></i>
               </a>
             </Link>
 
             <Link href="https://www.instagram.com/a___2008s" legacyBehavior>
-              <a target="_blank" rel="noopener noreferrer">
+              <a target="_blank" rel="noopener noreferrer" title="تواصل معنا عبر الانستجرام">
                 <i className="ri-instagram-line instagram"></i>
               </a>
             </Link>

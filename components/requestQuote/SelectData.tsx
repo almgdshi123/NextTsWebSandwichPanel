@@ -1,17 +1,16 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import dataSelect from '../dataSelect';
+
 interface Product {
   title: string;
 }
 
-// تعريف واجهة للخدمة والمنتجات المرتبطة بها
 interface Service {
   id: string;
   product: Product[];
 }
 
-// بيانات الخدمات والمنتجات
 const services: Service[] = dataSelect;
 
 const ServiceProductForm: React.FC = () => {
@@ -29,15 +28,16 @@ const ServiceProductForm: React.FC = () => {
 
   return (
     <>
-  
       <div className="form-group">
-
-        <select name='service'
+        <label htmlFor="service-select">يرجى تحديد الخدمة</label>
+        <select
+          id="service-select"
+          name="service"
           className="form-control"
           value={selectedService}
           onChange={(e) => setSelectedService(e.target.value)}
         >
-          <option disabled value=''>يرجى تحديد الخدمة</option>
+          <option disabled value=''>اختر خدمة لتحديث المنتجات المتاحة</option>
           {services.map((service, index) => (
             <option key={index} value={service.id}>{service.id}</option>
           ))}
@@ -45,14 +45,20 @@ const ServiceProductForm: React.FC = () => {
       </div>
 
       <div className="form-group">
-        <select name='product' className="form-control" >
+        <label htmlFor="product-select">يرجى تحديد المنتج</label>
+        <select
+          id="product-select"
+          name="product"
+          className="form-control"
+          value={products.length ? undefined : ''}
+        >
           <option disabled value=''>يرجى تحديد المنتج</option>
           {products.map((product, index) => (
             <option key={index} value={product.title}>{product.title}</option>
           ))}
         </select>
       </div>
-      </>
+    </>
   );
 };
 

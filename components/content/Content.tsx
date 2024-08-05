@@ -51,7 +51,12 @@ function DropdownItem(props) {
             <div className="info">
               <Link
             
-                href={data.type==='section'?`/product-sandwich/${data.id}`:`/product-sandwich/${item.href}/${data.id}`}
+            href={data.type === 'section' 
+              ? `/product-sandwich/${data.id}` 
+              : data.type === 'category'
+                ? `/${data.url}`
+                : `/product-sandwich/${item.href}/${data.id}`
+            }
                 legacyBehavior
               >
                 <a rel="noopener noreferrer" className="block" title={data.alt}>

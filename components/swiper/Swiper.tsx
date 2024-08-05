@@ -28,21 +28,18 @@ export default function SwiperComponent() {
         className="mySwiper"
       >
         {dataSwiper.map((item, index) => (
-       
-          <SwiperSlide key={index} >
+          <SwiperSlide key={index}>
             <div className="subscribe">
-            <img              
- src={item.image} alt={item.description} loading="lazy" />
-
+              <img
+                src={item.image}
+                alt={item.description}
+                loading={index === 0 ? "eager" : "lazy"}
+              />
               <p>{item.title}</p>
               <br />
-              
-                          
-
             </div>
           </SwiperSlide>
         ))}
-   
       </Swiper>
     </>
   );

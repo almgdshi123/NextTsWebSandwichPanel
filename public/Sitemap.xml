@@ -72,7 +72,14 @@
 			<loc>https://sandwichpanl.com/product-sandwich/انواع-الواح-الساندوتش-بانل</loc>
 			<priority>1</priority>
 		</url>
-		
+		<url>
+			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل-لتغطية-الاسقف</loc>
+			<priority>1</priority>
+		</url>
+			<url>
+			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل-للجدران-الخارجية</loc>
+			<priority>1</priority>
+		</url>
 		<url>
 			<loc>https://sandwichpanl.com/product-sandwich</loc>
 			<priority>0.8</priority>

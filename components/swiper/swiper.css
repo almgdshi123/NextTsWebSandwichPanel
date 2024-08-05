@@ -1,7 +1,4 @@
-.swiper {
-  width: 100%;
-  height: auto; /* تعديل الارتفاع ليكون متجاوبًا */
-}
+
 
 .swiper-slide {
   text-align: center;
@@ -13,9 +10,10 @@
 
 .swiper-slide img {
   display: block;
-  width: auto; /* تعديل العرض ليكون متجاوبًا */
-  height: auto; /* تعديل الارتفاع ليكون متجاوبًا */
-  max-width: 100%; /* تحديد العرض الأقصى للصورة */
+  width: 400px;
+  height: 300px;
+  max-width: 100%; 
+  object-fit: cover;
 }
 
 .subscribe {
@@ -39,13 +37,4 @@
   background-color: var(--main-color);
 }
 
-@media screen and (min-width: 800px) {
-  .swiper {
-    width: 80%;
-  }
-  .subscribe {
 
-max-width: 500px;
-    padding: 20px;
-  }
-}
