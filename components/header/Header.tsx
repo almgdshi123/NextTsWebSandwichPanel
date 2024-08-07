@@ -167,10 +167,16 @@ function DropdownItem(props: {
   alt: string;
 }) {
   return (
+
     <li className="dropdownItem">
+
+
       <i className={props.icon}></i>
       <Link href={props.href} legacyBehavior>
-        <a title={props.alt}>{props.text}</a>
+        <a title={props.alt}>
+  
+          {props.text}
+          </a>
       </Link>
     </li>
   );

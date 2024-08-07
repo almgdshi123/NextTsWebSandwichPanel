@@ -1,0 +1,57 @@
+.Intro {
+  display: flex;
+
+justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: visible;
+  margin:2% 10%;
+  gap: 2rem;
+}
+
+
+.i-name {
+  display: flex;
+  
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.i-name >.txttwo {
+  color:#04364A;
+  line-height:1cm;
+
+  font-weight: bold;
+  font-size: 1rem;
+}
+.i-name > .txtone {
+  color:#176B87;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.i-name > .txtthree {
+  font-size: 16px;
+  color: #000;
+  margin-top: 10px;
+}
+
+
+.Intro ul{
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.Intro ul li{
+  margin: 0;
+  list-style: none;
+   background: url(../../../public/assets/img/checked.png) right center no-repeat; 
+  background-size: 18px;
+  padding-right: 1.7rem;
+  margin: 0.4rem 0;
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.Intro ul li span{
+  font-weight: 400;
+}
+
+

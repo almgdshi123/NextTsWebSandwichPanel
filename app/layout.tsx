@@ -14,16 +14,17 @@ export default function RootLayout({
   return (
 
     <html lang="ar" dir="rtl">
-     
-      <body >
-        <Header />
+    <head>
+    <link rel="apple-touch-icon" href="/logo.png"/>
 
-    
-        
-        {children}
-        <Footer />
-        </body>
-    </html>
+    </head>
+    <body>
+      <Header />
+      {children}
+      <Footer />
+    </body>
+  </html>
+
   );
 }
 

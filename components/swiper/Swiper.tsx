@@ -35,7 +35,7 @@ export default function SwiperComponent() {
                 alt={item.description}
                 loading={index === 0 ? "eager" : "lazy"}
               />
-              <p>{item.title}</p>
+              <h2>{item.title}</h2>
               <br />
             </div>
           </SwiperSlide>
