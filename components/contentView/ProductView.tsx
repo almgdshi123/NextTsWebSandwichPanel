@@ -46,7 +46,7 @@ export default function ProductView({ dataDetails }) {
                 <div className="img-showcase" ref={imgShowcaseRef}>
                   {data.imagedata.map((image, imageId) => (
                     <img
-                      loading="lazy"
+                    loading={imageId === 0 ? "eager" : "lazy"}
                       src={image.image}
                       alt={image.title}
                       key={imageId}
@@ -63,7 +63,10 @@ export default function ProductView({ dataDetails }) {
                       data-id={index + 1}
                       onClick={(e) => handleClick(e, index + 1)}
                     >
-                      <img src={image.image} alt={image.title} loading="lazy" />
+                      <img src={image.image} alt={image.title} 
+                      
+                       loading={index === 0 ? "eager" : "lazy"}
+                      />
                     </a>
                   </div>
                 ))}
@@ -72,7 +75,7 @@ export default function ProductView({ dataDetails }) {
 
             {/*  card left  */}
             <div className="product-content">
-              <h2 className="product-title">{data.title} </h2>
+              <h1 className="product-title">{data.title} </h1>
               <a
                 href={"/product-sandwich/" + dataDetails.href}
                 className="product-link"
@@ -99,20 +102,20 @@ export default function ProductView({ dataDetails }) {
               </div>
 
               <div className="product-detail">
-                <h2>حول الخدمة: </h2>
+                <h4>حول الخدمة: </h4>
                 <p>{data.description}</p>
-                <p>مميزات {data.title}:</p>
+                <h2> {data.title}:</h2>
                 <ul>
                   {data.features.map((feature, featureId) => (
                     <li key={featureId}>
-                      {feature.title} : <span> {feature.description} .</span>
+                      <h2 className="inline-heading ">{feature.title}</h2> : <span> {feature.description} .</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
               <div className="purchase-info">
-                <input type="number" min="0" defaultValue="1" />
+                {/* <input type="number" min="0" defaultValue="1" /> */}
                 <a
                   type="button"
                   href={`https://api.whatsapp.com/send?phone=966500513512&text=${encodeURIComponent(
@@ -121,6 +124,7 @@ export default function ProductView({ dataDetails }) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn"
+                  aria-label="التسوق عبر واتساب"
                 >
                   تسوق <i className=" ri-shopping-cart-fill"></i>
                 </a>
@@ -135,19 +139,22 @@ export default function ProductView({ dataDetails }) {
                   href="https://www.facebook.com/profile.php?id=100072036128119&mibextid=ZbWKwL"
                   legacyBehavior
                 >
-                  <a target="_blank" rel="noopener noreferrer">
+                  <a target="_blank" rel="noopener noreferrer" title="تواصل معنا عبر فيسبوك">
                     <i className="ri-facebook-line"></i>
                   </a>
                 </Link>
 
                 <Link href="https://www.instagram.com/a___2008s" legacyBehavior>
-                  <a target="_blank" rel="noopener noreferrer">
+                  <a target="_blank" rel="noopener noreferrer" title="تواصل معنا عبر انستجرام">
                     <i className="ri-instagram-line instagram"></i>
                   </a>
                 </Link>
                 <Link
                   href={`https://api.whatsapp.com/send?phone=966500513512&text=${encodeURIComponent(
-                    "https://sandwichpanl.com/product-sandwich/" + dataDetails.href+"/"+data.id
+                    "https://sandwichpanl.com/product-sandwich/" +
+                      dataDetails.href +
+                      "/" +
+                      data.id
                   )}`}
                   legacyBehavior
                 >

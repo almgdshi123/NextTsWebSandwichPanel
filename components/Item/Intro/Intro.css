@@ -42,13 +42,17 @@ justify-content: center;
 .Intro ul li{
   margin: 0;
   list-style: none;
-   background: url(../../../public/assets/img/checked.png) right center no-repeat; 
+   background: url(../../../public/assets/img/checked.png) right 8px  no-repeat; 
+
   background-size: 18px;
   padding-right: 1.7rem;
   margin: 0.4rem 0;
-  font-size: 16px;
+  font-size: medium;
   font-weight: 600;
   opacity: 0.9;
+}
+.Intro ul li h2{
+font-size: medium;
 }
 .Intro ul li span{
   font-weight: 400;

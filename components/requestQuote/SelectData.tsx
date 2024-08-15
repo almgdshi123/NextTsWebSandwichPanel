@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useEffect } from 'react';
-import dataSelect from '../dataSelect';
+import React, { useState, useEffect } from "react";
+import dataSelect from "../dataSelect";
 
 interface Product {
   title: string;
@@ -14,7 +14,7 @@ interface Service {
 const services: Service[] = dataSelect;
 
 const ServiceProductForm: React.FC = () => {
-  const [selectedService, setSelectedService] = useState<string>('');
+  const [selectedService, setSelectedService] = useState<string>("");
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
@@ -37,24 +37,27 @@ const ServiceProductForm: React.FC = () => {
           value={selectedService}
           onChange={(e) => setSelectedService(e.target.value)}
         >
-          <option disabled value=''>اختر خدمة لتحديث المنتجات المتاحة</option>
+          <option disabled value="">
+            اختر خدمة لتحديث المنتجات المتاحة
+          </option>
           {services.map((service, index) => (
-            <option key={index} value={service.id}>{service.id}</option>
+            <option key={index} value={service.id}>
+              {service.id}
+            </option>
           ))}
         </select>
       </div>
 
       <div className="form-group">
         <label htmlFor="product-select">يرجى تحديد المنتج</label>
-        <select
-          id="product-select"
-          name="product"
-          className="form-control"
-          value={products.length ? undefined : ''}
-        >
-          <option disabled value=''>يرجى تحديد المنتج</option>
+        <select id="product-select" name="product" className="form-control">
+          <option disabled value="">
+            يرجى تحديد المنتج
+          </option>
           {products.map((product, index) => (
-            <option key={index} value={product.title}>{product.title}</option>
+            <option key={index} value={product.title}>
+              {product.title}
+            </option>
           ))}
         </select>
       </div>

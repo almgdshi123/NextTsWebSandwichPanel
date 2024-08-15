@@ -6,7 +6,7 @@
 			<priority>1.0</priority>
 		</url>
 		<url>
-			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل</loc>
+			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل/</loc>
 			<priority>1</priority>
 		</url>
 		<url>
@@ -26,7 +26,7 @@
 			<priority>1</priority>
 		</url>
 		<url>
-			<loc>https://sandwichpanl.com/product-sandwich/غرف-جاهزة</loc>
+			<loc>https://sandwichpanl.com/product-sandwich/غرف-جاهزة/</loc>
 			<priority>1</priority>
 		</url>
 		<url>
@@ -42,7 +42,7 @@
 			<priority>1</priority>
 		</url> -->
 		<url>
-			<loc>https://sandwichpanl.com/product-sandwich/تركيب-هناجر</loc>
+			<loc>https://sandwichpanl.com/product-sandwich/تركيب-هناجر/</loc>
 			<priority>1</priority>
 		</url>
 		<url>
@@ -55,7 +55,7 @@
 			<priority>1</priority>
 		</url>
 		<url>
-			<loc>https://sandwichpanl.com/product-sandwich/غرف-حراسة</loc>
+			<loc>https://sandwichpanl.com/product-sandwich/غرف-حراسة/</loc>
 			<priority>1</priority>
 		</url>
 		<url>
@@ -69,24 +69,24 @@
 			<priority>1</priority>
 		</url>
  		<url>
-			<loc>https://sandwichpanl.com/product-sandwich/انواع-الواح-الساندوتش-بانل</loc>
+			<loc>https://sandwichpanl.com/product-sandwich/انواع-الواح-الساندوتش-بانل/</loc>
 			<priority>1</priority>
 		</url>
 		<url>
-			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل-لتغطية-الاسقف</loc>
+			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل-لتغطية-الاسقف/</loc>
 			<priority>1</priority>
 		</url>
 			<url>
-			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل-للجدران-الخارجية</loc>
+			<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل-للجدران-الخارجية/</loc>
 			<priority>1</priority>
 		</url>
 		<url>
-			<loc>https://sandwichpanl.com/product-sandwich</loc>
-			<priority>0.8</priority>
+			<loc>https://sandwichpanl.com/product-sandwich/</loc>
+			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://sandwichpanl.com/contact</loc>
-			<priority>0.4</priority>
+			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://sandwichpanl.com/مقاول-ساندوتش-بانل</loc>

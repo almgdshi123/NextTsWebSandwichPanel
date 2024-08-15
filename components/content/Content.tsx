@@ -19,11 +19,13 @@ function DropdownItem(props) {
       <div className="poular-box">
         <h2>{item.title}</h2>
         {props.title === "home" ? (
-          <Link href={`/product-sandwich/${item.href}`} legacyBehavior>
-            <a className="main-color" title={item.alt}>
-              المزيد من التفاصيل
-            </a>
-          </Link>
+          <a
+            className="main-color"
+            title={item.alt}
+            href={`/product-sandwich/${item.href}/`}
+          >
+            المزيد من التفاصيل
+          </a>
         ) : null}
       </div>
       <div className="subject-box grid">
@@ -32,11 +34,13 @@ function DropdownItem(props) {
             <div className="header">
               <div className="image">
                 <img src={data.image} alt={data.altimage} loading="lazy" />
-                <Link href={`/product-sandwich/${item.href}`} legacyBehavior>
-                  <a className="tag" title={item.alt + "" + data.altimage}>
-                    {item.title}
-                  </a>
-                </Link>
+                <a
+                  className="tag"
+                  title={item.alt + "" + data.altimage}
+                  href={`/product-sandwich/${item.href}/`}
+                >
+                  {item.title}
+                </a>
               </div>
               <div className="date">
                 <span>{data.price}</span>{" "}
@@ -49,20 +53,20 @@ function DropdownItem(props) {
               </div>
             </div>
             <div className="info">
-              <Link
-            
-            href={data.type === 'section' 
-              ? `/product-sandwich/${data.id}` 
-              : data.type === 'category'
-                ? `/${data.url}`
-                : `/product-sandwich/${item.href}/${data.id}`
-            }
-                legacyBehavior
+              <a
+                rel="noopener noreferrer"
+                className="block"
+                href={
+                  data.type === "section"
+                    ? `/product-sandwich/${data.id}/`
+                    : data.type === "category"
+                    ? `/${data.url}`
+                    : `/product-sandwich/${item.href}/${data.id}`
+                }
+                title={data.alt}
               >
-                <a rel="noopener noreferrer" className="block" title={data.alt}>
-                  <span className="title ">{data.description} </span>
-                </a>
-              </Link>
+                <span className="title ">{data.description} </span>
+              </a>
               <p className="description">
                 {data.content.split("\n").map((line, index) => (
                   <React.Fragment key={index}>
@@ -80,16 +84,14 @@ function DropdownItem(props) {
 
   return (
     <div>
-      {dataContent.map((item, index) => (
-           item.status===true ||props.title!="home" ?  (
-          
-           
-        <section key={index} id={item.href}>
-          {props.title === "home" || item.href === props.title
-            ? renderContent(item, index)
-            : null}
-        </section>
-      ):null)
+      {dataContent.map((item, index) =>
+        item.status === true || props.title != "home" ? (
+          <section key={index} id={item.href}>
+            {props.title === "home" || item.href === props.title
+              ? renderContent(item, index)
+              : null}
+          </section>
+        ) : null
       )}
     </div>
   );

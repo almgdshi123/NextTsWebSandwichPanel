@@ -30,7 +30,7 @@ const Intro = ({ txtone, txttwo, txtthree, txtfour, txtfive }) => {
           <ul>
             {txtfive.map((item, index) => (
               <li key={index}>
-                {item.title} :<span> {item.description}</span>
+              <h2 className="inline-heading ">{item.title}</h2>  :<span> {item.description}</span>
               </li>
             ))}
           </ul>

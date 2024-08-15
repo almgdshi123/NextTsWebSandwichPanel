@@ -16,6 +16,8 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
     <head>
     <link rel="apple-touch-icon" href="/logo.png"/>
+    <link rel="icon" href="/logo.png"></link>
+
 
     </head>
     <body>
