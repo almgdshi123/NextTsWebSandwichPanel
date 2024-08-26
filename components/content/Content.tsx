@@ -65,7 +65,7 @@ function DropdownItem(props) {
                 }
                 title={data.alt}
               >
-                <span className="title ">{data.description} </span>
+                <span className="title "><strong>{data.description} </strong></span>
               </a>
               <p className="description">
                 {data.content.split("\n").map((line, index) => (

@@ -2,21 +2,26 @@ import "./content.css";
 
 import { database } from "../dataContent";
 import React from "react";
-import Link from "next/link";
 
 export default function EndContent({ content }) {
+  if (!content) {
+    return null;
+  }
   return (
+
+
     <div className="subjcet-container">
       <div className="poular-box">
         <div className="text-center">
           <p> مواضيع ذات صلة</p>
         </div>
         <div className="subject-box grid">
-          {content &&
+          {
             content.map((item) => <DropdownItem key={item} number={item} />)}
         </div>
       </div>
     </div>
+ 
   );
 }
 

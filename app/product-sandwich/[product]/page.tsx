@@ -1,10 +1,8 @@
 import Content from "@/components/content/Content";
 import EndContent from "@/components/content/EndContent";
 import { dataContent } from "@/components/dataContent";
-import { introDataContent } from "@/components/IntroDataContent";
-import { endIntroDataContent } from "@/components/IntroDataContent";
+import { EndIntroDataContent, IntroDataContent } from "@/components/Item/Intro/IntroContent";
 
-import Intro from "@/components/Item/Intro/Intro";
 import SwiperPage from "@/components/swiper/SwiperPage";
 
 export async function generateStaticParams() {
@@ -44,63 +42,20 @@ export default function Page(props) {
         : null}
 
       <Content title={productName}></Content>
-      {product?.endIntro
+  
+        {product?.swiper ? <SwiperPage data={product?.swiper}></SwiperPage> : null}
+        {product?.endIntro
         ? product.endIntro.map((item, index) => (
             <EndIntroDataContent introData={item} key={index} />
           ))
         : null}
-        {product?.swiper ? <SwiperPage data={product?.swiper}></SwiperPage> : null}
-      
 
       <EndContent content={product?.Page}></EndContent>
 
     </div>
   );
 }
-function IntroDataContent({ introData }) {
-  return (
-    <>
-      {introDataContent[introData] ? (
-        <>
-          {introDataContent[introData].title ? (
-            <div className="text-center">
-              <h2>{introDataContent[introData].title}</h2>
-            </div>
-          ) : null}
-          <Intro
-            txtone={introDataContent[introData].txtone}
-            txttwo={introDataContent[introData].txttwo}
-            txtthree={introDataContent[introData].txtthree}
-            txtfour={introDataContent[introData].txtfour}
-            txtfive={introDataContent[introData].txtfive}
-          />
-        </>
-      ) : null}
-    </>
-  );
-}
-function EndIntroDataContent({ introData }) {
-  return (
-    <>
-      {endIntroDataContent[introData] ? (
-        <>
-          {endIntroDataContent[introData].title ? (
-            <div className="text-center">
-              <h2>{endIntroDataContent[introData].title}</h2>
-            </div>
-          ) : null}
-          <Intro
-            txtone={endIntroDataContent[introData].txtone}
-            txttwo={endIntroDataContent[introData].txttwo}
-            txtthree={endIntroDataContent[introData].txtthree}
-            txtfour={endIntroDataContent[introData].txtfour}
-            txtfive={endIntroDataContent[introData].txtfive}
-          />
-        </>
-      ) : null}
-    </>
-  );
-}
+
 export const metadata = {
   title: "",
   description: "",

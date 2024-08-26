@@ -11,15 +11,18 @@ const Intro = ({ txtone, txttwo, txtthree, txtfour, txtfive }) => {
             {txtone && <h2 className="txtone">{txtone}</h2>}
             {txttwo && <h2 className="txttwo">{txttwo}</h2>}
             {(txtthree || txtfour) && (
-              <span className="txtthree">
+              <div className="txtthree">
                 {txtthree && (
-                  <>
+                  <p>
                     {txtthree}
-                    <br />
-                  </>
+                  </p>
                 )}
-                {txtfour}
-              </span>
+                   <br />
+                   <p>
+                   {txtfour}
+                   </p>
+              
+              </div>
             )}
           </div>
         </div>
@@ -30,7 +33,7 @@ const Intro = ({ txtone, txttwo, txtthree, txtfour, txtfive }) => {
           <ul>
             {txtfive.map((item, index) => (
               <li key={index}>
-              <h2 className="inline-heading ">{item.title}</h2>  :<span> {item.description}</span>
+              <h2 className="inline-heading ">{item.title}</h2>  :<p  className="inline-heading "> {item.description}</p>
               </li>
             ))}
           </ul>

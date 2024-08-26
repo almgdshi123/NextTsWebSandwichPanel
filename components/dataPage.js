@@ -39,10 +39,10 @@ export const dataPage = [
         ,
         {
             "title":"/product-sandwich"
-            ,"text": "تصفح كافة المنتجات ",
+            ,"text": " الإرشادات والنصائح",
             "icon": "ri-arrow-right-s-line",
             "href": "/product-sandwich"+"/",
-            "alt": "المزيد من التفاصيل - تصفح كافة المنتجات السندويشية"
+            "alt": "إرشادات ونصائح حول استخدام ألواح ساندوتش بانل"
         }
     
     

@@ -63,7 +63,7 @@ export default function ProductView({ dataDetails }) {
                       data-id={index + 1}
                       onClick={(e) => handleClick(e, index + 1)}
                     >
-                      <img src={image.image} alt={image.title} 
+                      <img src={image.image} alt={image.title}  title={image.title}
                       
                        loading={index === 0 ? "eager" : "lazy"}
                       />
@@ -104,11 +104,12 @@ export default function ProductView({ dataDetails }) {
               <div className="product-detail">
                 <h4>حول الخدمة: </h4>
                 <p>{data.description}</p>
-                <h2> {data.title}:</h2>
+
+                <h2> {data?.titlefeatured ? data.titlefeatured : data.title }:</h2>
                 <ul>
                   {data.features.map((feature, featureId) => (
                     <li key={featureId}>
-                      <h2 className="inline-heading ">{feature.title}</h2> : <span> {feature.description} .</span>
+                      <h2 className="inline-heading ">{feature.title}</h2> : <p className="inline-heading"> {feature.description} .</p>
                     </li>
                   ))}
                 </ul>

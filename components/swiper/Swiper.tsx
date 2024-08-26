@@ -33,6 +33,7 @@ export default function SwiperComponent() {
               <img
                 src={item.image}
                 alt={item.description}
+                title={item.title}
                 loading={index === 0 ? "eager" : "lazy"}
               />
               <h2>{item.title}</h2>

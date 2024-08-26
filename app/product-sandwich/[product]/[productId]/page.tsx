@@ -1,5 +1,11 @@
+import EndContent from "@/components/content/EndContent";
 import ProductView from "@/components/contentView/ProductView";
 import { dataDetails } from "@/components/dataDetails";
+import {
+  EndIntroDataContent,
+  IntroDataContent,
+} from "@/components/Item/Intro/IntroContent";
+import SwiperPage from "@/components/swiper/SwiperPage";
 export async function generateStaticParams() {
   const paths = dataDetails.flatMap((product) =>
     product.data.map((productData) => ({
@@ -34,10 +40,29 @@ export default function Page(props) {
   metadata.twitter.title = productData.data[0].title;
   metadata.twitter.images.url = productData.data[0].twitter.image;
   metadata.twitter.card = productData.data[0].twitter.card;
+  metadata.twitter.images.alt = metadata.openGraph.images.alt =
+    productData.data[0].og.alt ??
+    "شركة النظم المتطورة لساندوتش بانل والغرف الجاهزة";
 
   return (
     <div>
       <ProductView dataDetails={productData} />
+
+      {productData.data[0].intro
+        ? productData.data[0].intro.map((item, index) => (
+            <IntroDataContent introData={item} key={index} />
+          ))
+        : null}
+
+      {productData.data[0]?.swiper ? (
+        <SwiperPage data={productData.data[0]?.swiper}></SwiperPage>
+      ) : null}
+      {productData.data[0]?.endIntro
+        ? productData.data[0].endIntro.map((item, index) => (
+            <EndIntroDataContent introData={item} key={index} />
+          ))
+        : null}
+      <EndContent content={productData.data[0]?.Page}></EndContent>
     </div>
   );
 }
@@ -51,13 +76,9 @@ export const metadata = {
     title: "",
     site_name: "",
     description: "",
-    images: 
-    {
+    images: {
       url: "you_url_here",
       alt: "شركة النظم المتطورة لساندوتش بانل والغرف الجاهزة",
-
-
-
     },
     type: "",
     locale: "ar_AR",
@@ -65,13 +86,11 @@ export const metadata = {
   twitter: {
     title: "",
     card: "summary_large_image",
-    images: 
-      {
-        url: "you_url_here",
-       
-        alt: "شركة النظم المتطورة لساندوتش بانل والغرف الجاهزة",
+    images: {
+      url: "you_url_here",
 
- 
-      }
+      alt: "شركة النظم المتطورة لساندوتش بانل والغرف الجاهزة",
+    },
+    robots: "index, follow",
   },
 };

@@ -125,7 +125,7 @@
   font-weight: 600;
   opacity: 0.9;
 }
-.product-detail ul li span {
+.product-detail ul li p {
   font-weight: 400;
 }
 .purchase-info {
@@ -183,13 +183,13 @@
 
 @media screen and (min-width: 992px) {
   .container {
-    margin: 8rem 0;
+    margin: 16rem 0;
+
   }
 
   .card-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5rem;
   }
   .card-wrapper {
     height: 100vh;
