@@ -1,6 +1,8 @@
+import EndContent from "@/components/content/EndContent";
 import ProductView from "@/components/contentView/ProductView";
 import { dataPageSoe } from "@/components/dataPageSoe";
 import { EndIntroDataContent, IntroDataContent } from "@/components/Item/Intro/IntroContent";
+import SwiperPage from "@/components/swiper/SwiperPage";
 export async function generateStaticParams() {
   const paths = dataPageSoe.flatMap((product) =>
     product.data.map((productData) => ({
@@ -48,11 +50,15 @@ export default function Page(props) {
      
       <ProductView dataDetails={productData} />
     </div>
+    {productData.data[0]?.swiper ? (
+        <SwiperPage data={productData.data[0]?.swiper}></SwiperPage>
+      ) : null}
     {productData.data[0]?.endIntro
         ? productData.data[0].endIntro.map((item, index) => (
             <EndIntroDataContent introData={item} key={index} />
           ))
         : null}
+         <EndContent content={productData.data[0]?.Page}></EndContent>
     </div>
   );
 }
