@@ -132,7 +132,7 @@ class Header extends React.Component<{}, IHeaderState> {
         </div>
         <div id="whatsapp">
           <Link
-            href="https://api.whatsapp.com/send?phone=966500513512"
+            href="https://api.whatsapp.com/send?phone=966502445688"
             legacyBehavior
           >
             <a
@@ -147,7 +147,7 @@ class Header extends React.Component<{}, IHeaderState> {
         </div>
         <div id="phone">
           <a
-            href="tel:+966500513512"
+            href="tel:+966502445688"
             target="_blank"
             rel="noopener noreferrer"
             className="phones"

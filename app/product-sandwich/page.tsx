@@ -40,7 +40,7 @@ export default function page() {
           }
         ]}
       />
-            <EndContent content={[15, 16]}></EndContent>
+            <EndContent content={[15, 16,17]}></EndContent>
 
       
     </div>

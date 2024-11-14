@@ -119,7 +119,7 @@ export default function ProductView({ dataDetails }) {
                 {/* <input type="number" min="0" defaultValue="1" /> */}
                 <a
                   type="button"
-                  href={`https://api.whatsapp.com/send?phone=966500513512&text=${encodeURIComponent(
+                  href={`https://api.whatsapp.com/send?phone=966502445688&text=${encodeURIComponent(
                     data.og.url
                   )}`}
                   target="_blank"
@@ -151,7 +151,7 @@ export default function ProductView({ dataDetails }) {
                   </a>
                 </Link>
                 <Link
-                  href={`https://api.whatsapp.com/send?phone=966500513512&text=${encodeURIComponent(
+                  href={`https://api.whatsapp.com/send?phone=966502445688&text=${encodeURIComponent(
                     "https://sandwichpanl.com/product-sandwich/" +
                       dataDetails.href +
                       "/" +

@@ -281,10 +281,18 @@
 			https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل/الواح-حائط-بانل-بسمك-10.0-سم</loc>
 
 	</url>
-	<url>
-		<loc>https://sandwichpanl.com/product-sandwich/غرف-جاهزة/</loc>
-
-	</url>
+	<!-- <url>
+	
+		<loc>
+			https://sandwichpanl.com/غرف-جاهزة-بركسات
+		</loc>
+		
+	</url> -->
+<url>
+	<ioc>
+		https://sandwichpanl.com/غرف-مجالس-ملاحق
+	</ioc>
+</url>
 	<url>
 		<loc>https://sandwichpanl.com/product-sandwich/غرف-جاهزة/غرف-جاهزة-مسبقة-الصنع</loc>
 
