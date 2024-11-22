@@ -1,49 +1,51 @@
-
 export const dataPage = [
-    
-        {
-            "title": "home",
-            "text": "الصفحة الرئيسية",
-            "icon": "ri-home-4-line",
-            "href": "/",
-            "alt": "الرئيسية - ابدأ رحلتك في موقعنا من هنا"
-        },
-        {
-            "title": "Sandwich",
-            "text": "سندويش",
-            "icon": "ri-briefcase-4-line",
-            "href": "/product-sandwich/"+ "الواح-الساندوتش-بانل/",
-            "alt": "سندويش بانل - اكتشف منتجاتنا من ألواح الساندوتش بانل"
-        },
-        {
-            "title": "Room",
-            "text": "غرف جاهزة",
-            "icon": "ri-shopping-bag-3-line",
-            "href": "/product-sandwich/"+"غرف-جاهزة"+"/",
-            "alt": "غرف جاهزة - تصفح تصاميم الغرف الجاهزة لكافة الاستخدامات"
-        },
-        {
-            "title": "hnaager",
-            "text": "قسم تركيب الهناجر",
-            "icon": "ri-phone-line",
-            "href": "/product-sandwich/"+"تركيب-هناجر"+"/",
-            "alt": "تركيب الهناجر - خدمات تركيب الهناجر المتكاملة"
-        },
-        {
-            "title":"/contact"
-            ,"text": "  طلب عرض سعر المنتجات " ,
-            "icon": "ri-phone-line",
-            "href": "/contact",
-            "alt": "اتصل بنا - تواصل معنا"
-        }
-        ,
-        {
-            "title":"/product-sandwich"
-            ,"text": " الإرشادات والنصائح",
-            "icon": "ri-arrow-right-s-line",
-            "href": "/product-sandwich"+"/",
-            "alt": "إرشادات ونصائح حول استخدام ألواح ساندوتش بانل"
-        }
-    
-    
+  {
+    title: "home",
+    text: "الصفحة الرئيسية",
+    icon: "ri-home-4-line",
+    href: "/",
+    alt: "الرئيسية - ابدأ رحلتك في موقعنا من هنا",
+  },
+  {
+    title: "Sandwich",
+    text: "سندويش",
+    icon: "ri-briefcase-4-line",
+    href: "/product-sandwich/" + "الواح-الساندوتش-بانل/",
+    alt: "سندويش بانل - اكتشف منتجاتنا من ألواح الساندوتش بانل",
+  },
+  {
+    title: "Room",
+    text: "غرف جاهزة",
+    icon: "ri-shopping-bag-3-line",
+    href: "/product-sandwich/" + "غرف-جاهزة" + "/",
+    alt: "غرف جاهزة - تصفح تصاميم الغرف الجاهزة لكافة الاستخدامات",
+  },
+  {
+    title: "hnaager",
+    text: "قسم تركيب الهناجر",
+    icon: "ri-home-line",
+    href: "/product-sandwich/" + "تركيب-هناجر" + "/",
+    alt: "تركيب الهناجر - خدمات تركيب الهناجر المتكاملة",
+  },
+  {
+    title: "Umbrellas",
+    text: "قسم تركيب المضلات ",
+    icon: "ri-umbrella-line",
+    href: "/product-sandwich/" + "تركيب-مظلات" + "/",
+    alt: "مظلات وسواتر النظم المتطورة - حلول متكاملة لجميع أنواع المظلات والسواتر في السعودية",
+  },
+  {
+    title: "/contact",
+    text: "  طلب عرض سعر المنتجات ",
+    icon: "ri-phone-line",
+    href: "/contact",
+    alt: "اتصل بنا - تواصل معنا",
+  },
+  {
+    title: "/product-sandwich",
+    text: " الإرشادات والنصائح",
+    icon: "ri-arrow-right-s-line",
+    href: "/product-sandwich" + "/",
+    alt: "إرشادات ونصائح حول استخدام ألواح ساندوتش بانل",
+  },
 ];

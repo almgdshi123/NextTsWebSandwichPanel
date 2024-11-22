@@ -289,9 +289,9 @@
 		
 	</url> -->
 <url>
-	<ioc>
+	<loc>
 		https://sandwichpanl.com/غرف-مجالس-ملاحق
-	</ioc>
+	</loc>
 </url>
 	<url>
 		<loc>https://sandwichpanl.com/product-sandwich/غرف-جاهزة/غرف-جاهزة-مسبقة-الصنع</loc>
@@ -335,6 +335,10 @@
 	<url>
 		<loc>https://sandwichpanl.com/product-sandwich/انواع-الواح-الساندوتش-بانل/</loc>
 
+	</url>
+
+	<url>
+		<loc>https://sandwichpanl.com/product-sandwich/تركيب-مظلات/</loc>
 	</url>
 	<url>
 		<loc>https://sandwichpanl.com/product-sandwich/الواح-الساندوتش-بانل-لتغطية-الاسقف/</loc>
