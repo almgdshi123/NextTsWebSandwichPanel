@@ -1016,7 +1016,7 @@ export const dataDetails = [
         ],
         intro: [],
 
-        Page: [21],
+        Page: [21,34,35],
 
     
 
@@ -1060,6 +1060,9 @@ export const dataDetails = [
           card: "summary_large_image",
           image: "https://sandwichpanl.com/assets/img/مظلات-سحاب-3.jpeg",
         },
+        intro: [],
+        Page: [36,35,34],
+
         features: [
           {
             title: "سهولة التشغيل",

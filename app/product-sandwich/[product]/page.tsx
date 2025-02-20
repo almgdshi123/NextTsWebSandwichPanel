@@ -5,10 +5,23 @@ import { EndIntroDataContent, IntroDataContent } from "@/components/Item/Intro/I
 
 import SwiperPage from "@/components/swiper/SwiperPage";
 
-export async function generateStaticParams() {
-  const data = dataContent.map((product) => ({ product: product.href }));
+
+
+
+
+export async function generateStaticParams(): Promise<{ product: string }[]> {
+  const data: any[] = []; 
+
+  for (const product of dataContent) {
+    const productData = { product: product.href };
+    data.push(productData);
+
+    await new Promise(resolve => setTimeout(resolve, 1000));  
+  }
+
   return data;
 }
+
 
 export default function Page(props) {
   const productName = decodeURIComponent(props.params.product);
