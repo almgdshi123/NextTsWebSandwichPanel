@@ -3,67 +3,88 @@ import ProductView from "@/components/contentView/ProductView";
 import { dataPageSoe } from "@/components/dataPageSoe";
 import { EndIntroDataContent, IntroDataContent } from "@/components/Item/Intro/IntroContent";
 import SwiperPage from "@/components/swiper/SwiperPage";
+import { a, data } from "framer-motion/client";
 export async function generateStaticParams() {
   const paths = dataPageSoe.flatMap((product) =>
     product.data.map((productData) => ({
-      page: productData.id.toString(),
+      page: productData.id,
     }))
   );
 
   return paths;
 }
 
-export default function Page(props) {
+export  default async function Page(props) {
   const page = decodeURIComponent(props.params.page);
+
+  let productDataFilter: { data: any[] } = { data: [] };
 
   const product = "";
 
-  const productData = dataPageSoe.find((item) => item.href === product);
+  const productData = dataPageSoe.find((item) => item.href == product);
+
   if (productData) {
-    productData.data = productData.data.filter((item) => item.id === page);
+    await new Promise<void>(async (resolve) => {
+      while (!productData.data.some((item) => item.id == page)) {
+        await new Promise(resolve => setTimeout(resolve, 1000)); // تأخير نصف ثانية (500 ميلي ثانية)
+      }
+      productDataFilter.data=productData.data.filter((item) => item.id == page);
+
+      resolve();
+    });
+  
+    const productDetails = productData.data.find((item) => item.id === page);
+  
+    if (productDetails) {
+      metadata.title = productDetails.title;
+      metadata.description = productDetails.og.description;
+      metadata.keywords = productDetails.keywords;
+      metadata.author = productDetails.author;
+      metadata.openGraph.url = productDetails.og.url;
+      metadata.openGraph.site_name = productDetails.og.site_name;
+      metadata.openGraph.title = productDetails.og.title;
+      metadata.openGraph.description = productDetails.og.description;
+      metadata.openGraph.images.url = productDetails.og.image;
+      metadata.openGraph.type = productDetails.og.type;
+      metadata.twitter.images.url = productDetails.twitter.image;
+      metadata.twitter.card = productDetails.twitter.card;
+      metadata.twitter.images.alt = metadata.openGraph.images.alt =
+        productDetails.og.alt ?? "شركة النظم المتطورة لساندوتش بانل والغرف الجاهزة";
+    } else {
+      return null;
+    }
+  } else {
+    return null;
   }
-  if (!productData) return null;
-  metadata.title = productData.data[0].title;
-  metadata.description = productData.data[0].og.description;
-  metadata.keywords = productData.data[0].keywords;
-  metadata.author = productData.data[0].author;
-  metadata.openGraph.url = productData.data[0].og.url;
-  metadata.openGraph.site_name = productData.data[0].og.site_name;
-  metadata.openGraph.title = productData.data[0].og.title;
-  metadata.openGraph.description = productData.data[0].og.description;
-  metadata.openGraph.images.url = productData.data[0].og.image;
-  metadata.openGraph.type = productData.data[0].og.type;
-  metadata.twitter.images.url = productData.data[0].twitter.image;
-  metadata.twitter.card = productData.data[0].twitter.card;
-  metadata.twitter.images.alt = metadata.openGraph.images.alt =
-    productData.data[0].og.alt ??
-    "شركة النظم المتطورة لساندوتش بانل والغرف الجاهزة";
+  
 
   return (
     <div>
-    {productData.data[0].intro
-      ? productData.data[0].intro.map((item, index) => (
+    {productDataFilter.data[0].intro
+      ? productDataFilter.data[0].intro.map((item, index) => (
           <IntroDataContent introData={item} key={index} />
         ))
       : null}
     <div>
      
-      <ProductView dataDetails={productData} />
+      <ProductView dataDetails={productDataFilter} />
     </div>
-    {productData.data[0]?.swiper ? (
-        <SwiperPage data={productData.data[0]?.swiper}></SwiperPage>
+    {productDataFilter.data[0]?.swiper ? (
+        <SwiperPage data={productDataFilter.data[0]?.swiper}></SwiperPage>
       ) : null}
-    {productData.data[0]?.endIntro
-        ? productData.data[0].endIntro.map((item, index) => (
+    {productDataFilter.data[0]?.endIntro
+        ? productDataFilter.data[0].endIntro.map((item, index) => (
             <EndIntroDataContent introData={item} key={index} />
           ))
         : null}
-         <EndContent content={productData.data[0]?.Page}></EndContent>
+         <EndContent content={productDataFilter.data[0]?.Page}></EndContent>
     </div>
   );
 }
-export const metadata ={
+export let metadata ={
   title: "",
+  metadataBase: new URL("https://sandwichpanel.com"), // قم بتحديثه بعنوان موقعك الفعلي
+
   description: "",
   keywords: "",
   author: "",

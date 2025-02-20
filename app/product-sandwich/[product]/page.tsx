@@ -72,6 +72,8 @@ export default function Page(props) {
 export const metadata = {
   title: "",
   description: "",
+  metadataBase: new URL("https://sandwichpanel.com"), // قم بتحديثه بعنوان موقعك الفعلي
+
   keywords: "",
   author: "",
   openGraph: {

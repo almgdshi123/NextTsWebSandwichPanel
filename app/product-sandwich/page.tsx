@@ -47,7 +47,9 @@ export default function page() {
   );
 }
 export const metadata = {
-  title: "صفحة الإرشادات والنصائح الخاصة بموقعنا!",
+  title: "صفحة الإرشادات والنصائح الخاصة بموقعنا!", 
+   metadataBase: new URL("https://sandwichpanel.com"), // قم بتحديثه بعنوان موقعك الفعلي
+
   description:
     "اكتشف نصائح وإرشادات تفصيلية لاستخدام منتجاتنا. نوفر لك مقالات ودروسًا مع مجموعة شاملة من الإرشادات لضمان تحقيق أقصى استفادة من منتجاتك والنجاح في مشاريعك.",
   keywords:
@@ -69,10 +71,7 @@ export const metadata = {
   twitter: {
     title: "صفحة الإرشادات والنصائح - شركة النظم المتطورة",
     card: "summary_large_image",
-    images: {
-      url: "https://sandwichpanl.com/assets/img/إرشادات-استخدام-ساندوتش-بانل.jpg",
-      alt: "نصائح وإرشادات لاستخدام الساندوتش بانل",
-    },
+
   },
   robots: "index, follow",
 };

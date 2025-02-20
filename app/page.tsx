@@ -74,6 +74,8 @@ export default function Home() {
 
 export const metadata = {
   title: "شركة النظم المتطورة لساندوتش بانل والغرف الجاهزة",
+  metadataBase: new URL("https://sandwichpanel.com"), // قم بتحديثه بعنوان موقعك الفعلي
+
   description:
     "تصفح تشكيلتنا الواسعة من الساندوتش بانل والغرف الجاهزة مع خدمات توريد وتركيب الهناجر احترافية في جميع أنحاء المملكة. احصل على حلول البناء المتكاملة اليوم ",
   keywords:

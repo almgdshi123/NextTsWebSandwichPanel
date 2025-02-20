@@ -10,6 +10,8 @@ export default function page() {
 
   export const metadata = {
     title: 'طلب عرض أسعار | ألواح الساندوتش بانل',
+    metadataBase: new URL("https://sandwichpanel.com"), // قم بتحديثه بعنوان موقعك الفعلي
+
     description: 'قدم طلبك الآن للحصول على عرض أسعار مخصص لألواح الساندوتش بانل. تواصل معنا لاستكشاف خيارات العزل الحراري والصوتي المتاحة لمشروعك في السعودية.',
     keywords: 'طلب عرض أسعار, ساندوتش بانل, السعودية, عزل حراري, عزل صوتي, بناء مبتكر, توفير الطاقة',
     author: 'شركة الساندوتش بانل لحلول العزل الحراري والصوتي',
@@ -23,7 +25,6 @@ export default function page() {
     twitter: {
       title: 'طلب عرض أسعار | ألواح الساندوتش بانل',
       card: 'summary_large_image',
-      image: 'https://sandwichpanl.com/assets/img/quote-request-banner.jpg',
     },
   };
   
