@@ -1234,6 +1234,8 @@ export const dataPageSoe = [
             "https://sandwichpanl.com/assets/img/مظلات-ساندوتش-بانل-1.jpeg",
         },
         titlefeatured: "ليش تختار المظلات والسواتر؟",
+        swiper: [40,43,39,42,45,44,41],
+        endIntro: [10],
         features: [
           {
             title: "حماية وخصوصية",
