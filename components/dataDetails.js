@@ -1,4 +1,3 @@
-import { a } from 'framer-motion/client';
 
 export const dataDetails = [
   {

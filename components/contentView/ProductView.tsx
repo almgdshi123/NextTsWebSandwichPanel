@@ -76,13 +76,7 @@ export default function ProductView({ dataDetails }) {
             {/*  card left  */}
             <div className="product-content">
               <h1 className="product-title">{data.title} </h1>
-              <a
-                href={"/product-sandwich/" + dataDetails.href}
-                className="product-link"
-                title={dataDetails.alt}
-              >
-                {dataDetails.title}
-              </a>
+          
               <div className="product-rating">
                 <i className="ri-star-fill"></i>
                 <i className="ri-star-fill"></i>
