@@ -387,6 +387,7 @@ export const dataDetails = [
           card: 'summary_large_image',
           image: 'https://sandwichpanl.com/assets/img/غرف-جاهزة.jpg',
         },
+        Page:[40],
         features: [
           {
             title: 'تصميم مرن',
@@ -410,7 +411,7 @@ export const dataDetails = [
       },
       {
         id: 'غرف-جاهزة-من-سندوتش',
-        title: 'غرف ساندوتش بانل معزولة  ',
+        title: 'غرف ساندوتش بانل معزولة ',
         imagedata: [
           {
             image: '/assets/img/مشاريع-البناء-المؤقت.jpg',
